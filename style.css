@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-BG: hsl(217, 54%, 11%);
+  --card-BG: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--main-BG);
+}
+
+img{
+  width: 100%;
+}
+
+section{
+  width: 96%;
+  margin:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card{
+  width: 370px;
+  background-color:var(--card-BG);
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card .topCard img{
+  border-radius: .8rem;
+}
+.card h1{
+  color: var(--White);
+  margin-top: 10px;
+}
+.card p{
+  color: var(--Soft-blue);
+  margin: 1rem 0px;
+  font-size: 18px;
+}
+.card .group{
+  display: flex;
+  justify-content: space-between;
+}
+.card .group .price, .card .group .colock, .card .cardFooter{
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+.card .group .price span{
+  color:var(--Cyan);
+  font-weight: bold;
+}
+.card .group .colock span{
+  color: var(--Soft-blue);
+}
+
+.card .group .price img, .card .group .colock img{
+  width:18px;
+}
+hr{
+  margin: 1.5rem 0;
+  border: none;
+  background-color: var(--line);
+  height:1px
+}
+.card .cardFooter .avatar img{
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--Soft-blue);
+  border-radius: 50px;
+}
+.card .cardFooter h4{
+  color: var(--White);
+}
+.card .cardFooter h4 span{
+  color: var(--Soft-blue)
+}
